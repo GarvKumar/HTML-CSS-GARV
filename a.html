@@ -1,12 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html>
+<head class="my-header" id="my-header"> 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML LAB</title>
+    <link rel="icon" type="image/x-icon" href="icon.jpg">
+    <style>
+        .navbar {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            display: flex;
+            float: left;
+
+        }
+
+        .nav {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            float: left;
+            display: block;
+            padding: 10px 40px 10px 0px;
+            margin-left: 770px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .nav a {
+            padding-right: 70px;
+            text-decoration: none;
+            color: brown;
+        }
+    </style>
+    <script>
+        function abc(){
+
+        }
+    </script>
 </head>
-<body>
-    <h1 style="color: ;green"> Hello Guys!</h1>
+
+<body style="background-color: rgb(0, 238, 255);">
+    <div class="navbar">
+        <div class="logo">
+            <img src="icon.jpg" alt="logo" width="50vw" height="50vh">
+        </div>
+        <div class="nav">
+            <a href="default.asp">Home</a>
+            <a href="news.asp">News</a>
+            <a href="contact.asp">Contact</a>
+            <a href="about.asp">About</a>
+        </div>
+    </div>
+    <div style="padding-top: 10px;">
+        <h1>This is first heading and this is the largest heading</h1>
+        <h2>This is second heading</h2>
+        <h3>This is third heading</h3>
+        <h4>This is fourth heading</h4>
+        <h5>This is fifth heading</h5>
+        <h6>This is six heading and it is the smallest heading of html </h6>
+        <p title="Paragraph" style="background-color: rgba(255, 0, 55, 0.712);">This is first <span style="background-color: yellowgreen;">Paragraph</span></p>
+        <a href="https://www.w3schools.com/">Web Tech</a><br>
+        <img src="panda.jpg" alt="debugger" height="300" width="500" usemap="#one">
+        <map name="one">
+            <area shape="rect" coords="10,100,200,200" href="one.jpg" alt=""></map><br>
+        <a href="https://www.youtube.com"><button style="color: navy;">Click Here</button></a>
+        <PRE title="hey this is  my intro">
+            Hii
+            I am <strong><i>Garv Sharma</i></strong>
+            And I am a Student of CSE Branch</PRE>
+        <picture>
+            <source media="(min-width:600px)" srcset="image.jpg">
+            <source media="(min-width:400px)" srcset="image.jpg">
+            <img src="image.gif" alt="image">
+        </picture><br>
+        table
+        <table border="1px solid" aria-colspan="1" style="border-collapse: collapse;">
+            <tr>
+                <th>Name</th>
+                <th>Course</th>
+                <th>Branch</th>
+                <th>Year</th>
+                <th>Age</th>
+                <th>College/University</th>
+            </tr>
+            <tr>
+                <td>Garv Kumar</td>
+                <td>Btech</td>
+                <td>CSE</td>
+                <td>3rd Year</td>
+                <td>21</td>
+                <td>Niet Greater Noida</td>
+            </tr>
+        </table>
+        list
+        <ul style="list-style-type: circle;">
+            <li>Rashid</li>
+            <li>umanshi</li>
+            <li>vishal</li>
+            <li>garv</li>
+        </ul>
+        <ol type="1" start="10">
+            <li>khan</li>
+            <li>sarkar</li>
+            <li>pal</li>
+            <li>sharma</li>
+        </ol>
+        <dl>
+            <dt>milk
+                <dd>-drink by human</dd>
+            </dt>
+        </dl>
+    </div>
 </body>
+
 </html>
