@@ -9,7 +9,14 @@
 </head>
 
 <body>
-    <form>
+    <form oninput="c.value=parseInt(a.value) + parseInt(b.value)">
+        a 
+        <input type="number" name="a" id="A">
+        + b 
+        <input type="number" name="b" id="b">
+        <br><br>
+
+
         <label for="fname">FirstName</label>
         <input type="text" value="Garv Sharma" name="fname" id="fname"><br>
 
@@ -26,14 +33,15 @@
         <input type="checkbox" name="check1" id="banaras"><br>
 
         <!-- option dropdown -->
-        <select name="" id="">
-            <option value="goa">Goa</option>
+        <select name="places" id="places" >
+            <option value="goa" selected>Goa</option>
             <option value="banaras">Banaras</option>
-        </select>
+        </select><br>
+        <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
 
         <input type="button" value="Submit">
     </form>
-
+    <br><br>
     <form action="#">
         <fieldset>
             <legend>Personal Details</legend>
@@ -54,7 +62,33 @@
 
             <input type="submit" value="Submit">
         </fieldset>
-    </form>
+    </form><br><br>
+
+    <button type="button" onclick="">My Final Submition</button><br><br>
+
+    <fieldset>
+        <legend>Enter Name</legend>
+        <label for="fname">FirstName</label>
+        <input type="text" id="fname" name="fname" placeholder="Enter the firstname"><br><br>
+        <label for="mname">MidName</label>
+        <input type="text" id="mname" name="fname" placeholder="Enter the middlename"><br><br>
+        <label for="lname">LastName</label>
+        <input type="text" id="lname" name="fname" placeholder="Enter the Lastname"><br><br>
+    </fieldset>
+    <br><br>
+    <label for="country">Select Country</label>
+    <input list="country" name="xyz">
+    <datalist id="country">
+        <option value="India">India</option>
+        <option value="Singapur">Singapur</option>
+        <option value="America">America</option>
+        <option value="Iraq">Iraq</option>
+        <option value=Iran>Iran</option>
+    </datalist>
+    <output>
+        
+    </output>
+
 
 </body>
 
