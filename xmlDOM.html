@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>DOM ACESSING XML</title>
+</head>
+
+<body>
+    <h1 id="heading"></h1>
+</body>
+
+</html>
+<script>
+    var parser, xmlDom;
+    var food = "<food> <fruits>" +
+        "<name>Apple</name>" +
+        "<color>Red</color>" +
+        "<taste>Sweet </taste>" +
+        "</fruits> </food>";
+    parser = new DOMParser();
+
+    xmlDom = parser.parseFromString(food, "text/xml");
+    document.getElementById('heading').innerHTML = xmlDom.getElementsByTagName('name')[0].childNodes[0].nodeValue;
+</script>
